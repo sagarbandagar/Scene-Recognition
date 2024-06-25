@@ -1,0 +1,258 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+<section class="banner_w3lspvt" id="home">
+	<div class="csslider infinity" id="slider1">
+
+		<div class="banner-top">
+			<div class="overlay">
+				<div class="container">
+					<div class="w3layouts-banner-info text-center">
+						<h3 class="text-wh">Scene Recognition from Photos, Videos and Real Time Camera Using
+							Deep Learning</h3>
+						<h4 class="text-wh mx-auto my-4"><b>Upload Clear Images</b></h4>
+						<br>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //banner -->
+
+
+<!-- //core values -->
+
+<!-- About Project -->
+<section class="blog py-5" id="aboutProject">
+	<div class="container py-md-5">
+		<h3 class="heading mb-sm-5 mb-4 text-center">About Project</h3>
+		<p class="text-justify">
+			<b>Human Brain knows how to recognize things by visually looking at
+				them.</b>
+			But, the question is about the sufficiently trained artificial system
+			which matches the human ability to classify the scene in an image or
+			video is still an open quest. So to overcome with this solution we
+			have developed <b>model</b> which can recognize the scene from photos,
+			videos, or real time camera feed.<br>
+			Scene recognition plays a crucial role in <b>computer vision</b> application.
+			It can be used for various applications ranging from <b>autonomous
+				vehicles</b> to <b>surveillance systems</b>.
+			The ability to identify and understand scene is essential for enhancing
+			the capabilities of various technologies.
+			Scene recognition is a fundamental task in computer vision, involving
+			the categorization of images or videos into predefined classes based
+			on their visual content.<br>
+			In this project, we address the scene recognition challenge by using
+			deep learning techniques, specifically <strong>transfer learning</strong> with the
+			<strong>ResNet50</strong> architecture. We are using <b>Intel Image Classification
+				Dataset</b> comprising images from five distinct scene categories such
+			as <strong>Forest, Sea, Mountain, Glacier and Street.</strong>
+		</p>
+	</div>
+</section>
+
+
+<!-- Products & Services -->
+<section class=" blog " id="ourServices">
+	<div class="container py-md-5">
+		<h3 class="heading mb-sm-5 mb-4 text-center">Our Services</h3>
+		<div class="row blog-grids">
+
+			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5 ">
+
+				<img src="{{ url_for('static', filename='images/upload.jpg') }}" class="img-fluid" alt="">
+
+				<!-- <img src="images/s4.jpg" class="img-fliud" alt="" /> -->
+				<a href="{{ url_for('disease_prediction') }}">
+					<div class="blog-info">
+						<h4>Scene Recognition</h4>
+						<p class=" mt-2">For Uploading Image -
+							<span class="click-here">click here</span>
+						</p>
+					</div>
+				</a>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+
+				<img src="{{ url_for('static', filename='images/upload.jpg') }}" class="img-fluid" alt="">
+
+				<!-- <img src="images/s4.jpg" class="img-fliud" alt="" /> -->
+				<a href="{{ url_for('real_time_classifcation') }}">
+					<div class="blog-info">
+						<h4>Scene Recognition</h4>
+						<p class="mt-2">For Real Time Scene Detection Using Camera -
+							<span class="click-here">click here</span>
+						</p>
+					</div>
+				</a>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+
+				<img src="{{ url_for('static', filename='images/upload.jpg') }}" class="img-fluid" alt="">
+
+				<!-- <img src="images/s4.jpg" class="img-fliud" alt="" /> -->
+				<a href="{{ url_for('video_upload') }}">
+					<div class="blog-info">
+						<h4>Scene Recognition</h4>
+						<p class="mt-2">For Uploading Recorded Video -
+							<span class="click-here">click here</span>
+						</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //Products & Services -->
+
+
+
+
+<!-- Meet Our Team -->
+<section class="blog py-5" id="ourTeam">
+	<div class="container py-md-5">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> Our Team</h3>
+		<h4 class="heading mb-sm-5 mb-3 text-center font-weight-bold"> Guided By</h4>
+		<div class="col-xl-3 col-sm-6 mb-5 row text-center ml-auto mr-auto">
+			<div class="bg-white rounded shadow-sm py-5 px-4">
+				<img src="../static/images/anand sir.jpg" alt="" width="100"
+					class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+				<h5 class="mb-0 font-weight-bold
+				">Prof. Anand S. Hiremath</h5><span class="small text-uppercase text-muted font-weight-bold">Assistant
+					Professor</span>
+				<ul class="social mb-0 list-inline mt-3">
+					<li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+					</li>
+					<li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+					</li>
+					<li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+					</li>
+					<li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-meta"></i></a></li>
+				</ul>
+			</div>
+		</div><!-- End -->
+
+		<div class="container">
+			<div class="row text-center">
+
+				<!-- Team item -->
+				<div class="col-xl-3 col-sm-6 mb-5">
+					<div class="bg-white rounded shadow-sm py-5 px-4"><img src="../static/images/rohan.jpeg" alt=""
+							width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+						<h5 class="mb-0 font-weight-bold">Rohan Kokatnur</h5><span
+							class="small text-uppercase text-muted font-weight-bold">USN -
+							2BL20CS070</span>
+						<ul class="social mb-0 list-inline mt-3">
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-linkedin"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-instagram"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-twitter"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-meta"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div><!-- End -->
+
+
+				<!-- Team item -->
+				<div class="col-xl-3 col-sm-6 mb-5">
+					<div class="bg-white rounded shadow-sm py-5 px-4">
+						<img src="../static/images/sagar.jpg" alt="" width="100"
+							class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+						<h5 class="mb-0 font-weight-bold">Sagar Bandagar</h5><span
+							class="small text-uppercase text-muted font-weight-bold">USN -
+							2BL20CS073</span>
+						<ul class="social mb-0 list-inline mt-3">
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-linkedin"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-instagram"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-twitter"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-meta"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div><!-- End -->
+
+				<!-- Team item -->
+				<div class="col-xl-3 col-sm-6 mb-5">
+					<div class="bg-white rounded shadow-sm py-5 px-4"><img src="../static/images/sarthak.jpg" alt=""
+							width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+						<h5 class="mb-0 font-weight-bold">Sarthak Teli</h5><span
+							class="small text-uppercase text-muted font-weight-bold">USN -
+							2BL20CS081</span>
+						<ul class="social mb-0 list-inline mt-3">
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-linkedin"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-instagram"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-twitter"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-meta"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div><!-- End -->
+
+				<!-- Team item -->
+				<div class="col-xl-3 col-sm-6 mb-5">
+					<div class="bg-white rounded shadow-sm py-5 px-4"><img src="../static/images/sumit.jpeg" alt=""
+							width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+						<h5 class="mb-0 font-weight-bold">Sumit Mali</h5><span
+							class="small text-uppercase text-muted font-weight-bold">USN -
+							2BL20CS104</span>
+						<ul class="social mb-0 list-inline mt-3">
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-linkedin"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-instagram"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i
+										class="bi bi-twitter"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-meta"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div><!-- End -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //Products & Services -->
+
+<!-- Creating custom grid and hover effect
+<section>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/s2.jpg" alt="">
+        <div class="overlay">
+           <h2>Hover effect 1</h2>
+           <a class="info" href="#">link here</a>
+        </div>
+    </div>
+</div> -->
+
+</html>
+
+{% endblock %}
